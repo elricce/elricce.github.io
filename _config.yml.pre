@@ -17,7 +17,6 @@ title: Future Blog Site for Tony
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Stay tuned for some great content!
-baseurl: "/myblog"
 twitter_username: Twitternamecomingsoon
 github_username: elricce
 minimal_mistakes_skin: dark
