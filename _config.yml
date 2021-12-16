@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Future Blog Site for Tony
-email:
+title: Tony Harris
+email: tony.f.harris@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Stay tuned for some great content!
-baseurl: "/myblog"
-twitter_username: Twitternamecomingsoon
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+        #url: "https://elricce.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: beccabillyboo
 github_username: elricce
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: default
 search: true
 
 # Build settings
@@ -57,34 +58,28 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Tony Harris"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I run RHEL because It's Great!"
+  name: "Tony Harris"
+  avatar: "/assets/images/tony-tiger.jpg"
+  bio: "I like RHEL because It's GREAT"
   links:
-          #    - label: "Website"
-          #      icon: "fas fa-fw fa-link"
-          #      url: "https://"
-          #    - label: "Twitter"
-          #      icon: "fab fa-fw fa-twitter-square"
-          #      url: "https://twitter.com/"
-          #    - label: "GitHub"
-          #      icon: "fab fa-fw fa-github"
-          #      url: "https://github.com/"
-          #    - label: "Instagram"
-          #      icon: "fab fa-fw fa-instagram"
-          #      url: "https://instagram.com/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://elricce.github.io/myblog"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/elricce"
 
 footer:
   links:
-          #    - label: "Twitter"
-          #      icon: "fab fa-fw fa-twitter-square"
-          #      url: "https://twitter.com/"
-          #    - label: "GitHub"
-          #      icon: "fab fa-fw fa-github"
-          #      url: "https://github.com/"
-          #    - label: "Instagram"
-          #      icon: "fab fa-fw fa-instagram"
-          #      url: "https://instagram.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/billybeccaboo"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/elricce"
 
 defaults:
   # _posts
@@ -92,7 +87,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: archive
       author_profile: true
       read_time: true
       comments: true
@@ -103,7 +98,7 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: single
+      layout: archive
       author_profile: true
 
 category_archive:
